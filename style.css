@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  padding-bottom: 15px;
+}
+
+/*navbar*/
+
+#navbar{
+  min-width: 300px;
+  background: #FF00B7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  border-right: 5px solid;
+  border-color: #FFA5E6;
+  font-weight: 600;
+}
+
+#navbar a{
+  color: aliceblue;
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover{
+  background: #fff;
+  color: #FF00B7;
+}
+
+#navbar ul{
+  list-style: none;
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li{
+  font-size: 1rem;
+  border-top: 2px solid #FFA5E6;
+}
+
+#navbar header{
+  margin: 10px;
+  font-size: 1.8em;
+}
+
+#main-doc{
+  margin-left: 350px;
+  padding: 20px;
+}
+
+#main-doc ul{
+  padding: 10px 50px;
+}
+
+#main-doc li{
+  padding-bottom: 10px;
+}
+
+#main-doc header{
+  font-size: 1.8em;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+code{
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+
+  #navbar{
+    min-width: 300px;
+    background: #FF00B7;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    max-height: 275px;
+    border:none;
+    font-weight: 600;
+    border-bottom: 5px solid #FFA5E6;
+  }
+
+  #navbar ul{
+    height: 207px;
+  }
+
+  #main-doc{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    overflow-x: hidden;
+  }
+
+  code {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+    white-space: pre-line;
+    font-size: 14px;
+  }
+}
+
